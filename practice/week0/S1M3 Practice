@@ -1,0 +1,37 @@
+def menu():
+    print("\n=== S1 M3 Practice Menu ===")
+    print("1. Variable Basics")
+    print("2. Input + Type Conversion")
+    print("3. f-String Practice")
+    print("4. Exit")
+
+def variable_basics():
+    x = 10
+    y = 3.14
+    z = "Python"
+    print(f"x={x}, y={y}, z={z}")
+
+def input_conversion():
+    age = int(input("Enter your age: "))
+    print(f"In 5 years, you will be {age + 5}")
+
+def fstring_practice():
+    name = input("Name: ")
+    city = input("City: ")
+    print(f"{name} lives in {city} and is learning Python!")
+
+while True:
+    menu()
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        variable_basics()
+    elif choice == "2":
+        input_conversion()
+    elif choice == "3":
+        fstring_practice()
+    elif choice == "4":
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Try again.")
